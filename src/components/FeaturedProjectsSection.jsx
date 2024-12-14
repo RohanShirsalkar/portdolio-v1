@@ -3,10 +3,10 @@ import { FaArrowRight } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import xboxAppImg from "../../public/laptop and mobile xbox (1).png";
 import adminAppImg from "../../public/laptop and mobile Admin.png";
-
+import foodieAppImg from "../../public/laptop and Resto foodie.png";
 const data = [
   {
-    imagePath: xboxAppImg,
+    imagePath: foodieAppImg,
     title: "Foodie - Online Food Delivery App",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa velvoluptatum repellendus voluptate cumque quia. Ipsum soluta quibusdam obcaecati illo, tenetur ut deserunt dolores inventore, fugit dolorem  sapiente ea quisquam.",
