@@ -58,8 +58,8 @@ const data = [
 const AllProjectsPage = () => {
   const navigate = useNavigate();
   return (
-    <div>
-      <div className="mt-24">
+    <div className="md:p-0 p-6">
+      <div className="mt-12 md:mt-24">
         <a
           className="text-cyan-400 text-lg flex items-center hover:text-cyan-600 cursor-pointer"
           onClick={() => navigate("/")}
@@ -72,10 +72,14 @@ const AllProjectsPage = () => {
       <table class="table-auto w-full mt-8">
         <thead>
           <tr className="border-b border-gray-600">
-            <th className="text-start text py-4 w-1/12">Year</th>
-            <th className="text-start text py-4 w-4/12">Project</th>
-            <th className="text-start text py-4 w-4/12">Tools Used</th>
-            <th className="text-start text py-4 w-4/12">Link</th>
+            <th className="text-start text py-4 w-2/6 md:w-1/12">Year</th>
+            <th className="text-start text py-4 w-4/6 md:w-4/12">Project</th>
+            <th className="text-start text py-4 w-4/12 hidden md:block">
+              Tools Used
+            </th>
+            <th className="text-start text py-4 w-4/12 hidden md:block">
+              Link
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -87,7 +91,7 @@ const AllProjectsPage = () => {
                   {element.title}
                 </a>
               </td>
-              <td className="py-4">
+              <td className="py-4 hidden md:block">
                 <div className="flex flex-wrap gap-2">
                   {element.tech.map((item, index) => (
                     <span
@@ -99,7 +103,7 @@ const AllProjectsPage = () => {
                   ))}
                 </div>
               </td>
-              <td className="py-4 flex flex-wrap">
+              <td className="py-4 flex-wrap hidden md:flex">
                 {element.links.map((link, index) => (
                   <a
                     className="flex items-center me-2 text-gray-400 hover:text-cyan-400"
