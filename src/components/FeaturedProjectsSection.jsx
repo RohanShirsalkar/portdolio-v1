@@ -1,24 +1,25 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import imageL from "../../public/laptop and mobile.png";
 
 const data = [
   {
-    imagePath: "public/laptop and mobile.png",
+    imagePath: imageL,
     title: "Foodie - Online Food Delivery App",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa velvoluptatum repellendus voluptate cumque quia. Ipsum soluta quibusdam obcaecati illo, tenetur ut deserunt dolores inventore, fugit dolorem  sapiente ea quisquam.",
     tech: ["Javascript", "React", "Tailwind", "Node.js", "Express.js", "MySql"],
   },
   {
-    imagePath: "public/laptop and mobile.png",
+    imagePath: imageL,
     title: "Admin Dashboard for Ecommerce Store",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa velvoluptatum repellendus voluptate cumque quia. Ipsum soluta quibusdam obcaecati illo, tenetur ut deserunt dolores inventore, fugit dolorem  sapiente ea quisquam.",
     tech: ["Javascript", "React", "Tailwind", "Firebase", "Razorpay"],
   },
   {
-    imagePath: "public/laptop and mobile.png",
+    imagePath: imageL,
     title: "Ecommerce Website for Gaming Consoles (X-BOX Clone)",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa velvoluptatum repellendus voluptate cumque quia. Ipsum soluta quibusdam obcaecati illo, tenetur ut deserunt dolores inventore, fugit dolorem  sapiente ea quisquam.",
