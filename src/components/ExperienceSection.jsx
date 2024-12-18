@@ -7,8 +7,16 @@ const data = [
     title: "React Developer",
     company: "Alemeno",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa velvoluptatum repellendus voluptate cumque quia. Ipsum soluta quibusdam obcaecati illo, tenetur ut deserunt dolores inventore, fugit dolorem  sapiente ea quisquam.",
-    tech: ["Javascript", "React", "Tailwind", "Firebase", "Razorpay"],
+      "Developed and optimized healthcare platform UIs, improving usability and and integrated payment gateways to streamline transactions. Developed a health survey portal with API integration. Collaborated with teams to ensure efficient development and on-time project delivery.",
+    tech: [
+      "Javascript",
+      "React",
+      "Redux",
+      "Next",
+      "Tailwind",
+      "Firebase",
+      "Razorpay",
+    ],
   },
   {
     from: "2022",
@@ -16,7 +24,7 @@ const data = [
     title: "Front End Developer",
     company: "Taqanal Energy",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa velvoluptatum repellendus voluptate cumque quia. Ipsum soluta quibusdam obcaecati illo, tenetur ut deserunt dolores inventore, fugit dolorem  sapiente ea quisquam.",
+      "Developed and maintained scalable admin portal UIs using Angular, enhancing user engagement and functionality. Worked closely with cross-functional teams, including designers and stakeholders, to incorporate feedback and improve user satisfaction.",
     tech: [
       "Javascript",
       "Typescript",
@@ -36,10 +44,7 @@ const ExperienceSection = () => {
       </div>
       <h2 className="hidden md:block text-2xl font-bold">Experiece</h2>
       {data.map((element, index) => (
-        <div
-          key={index}
-          className="md:px-4 py-6 md:flex w-100 cursor-pointer rounded-lg md:hover:bg-slate-800"
-        >
+        <div key={index} className="md:px-4 py-6 md:flex w-100 rounded-lg ">
           <div className="md:w-1/4">
             <p className="text-gray-400">
               {element.from} - {element.to}

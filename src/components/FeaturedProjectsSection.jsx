@@ -9,21 +9,21 @@ const data = [
     imagePath: foodieAppImg,
     title: "Foodie - Online Food Delivery App",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa velvoluptatum repellendus voluptate cumque quia. Ipsum soluta quibusdam obcaecati illo, tenetur ut deserunt dolores inventore, fugit dolorem  sapiente ea quisquam.",
+      "Developed a full-stack online food ordering platform with a responsive frontend using React.js and Tailwind CSS. Built robust backend architecture with Node.js, Express, and MySql for secure and efficient data management. Implemented features like a cart system with a single-restaurant order restriction, enhancing user experience.",
     tech: ["Javascript", "React", "Tailwind", "Node.js", "Express.js", "MySql"],
   },
   {
     imagePath: adminAppImg,
     title: "Admin Dashboard for Ecommerce Store",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa velvoluptatum repellendus voluptate cumque quia. Ipsum soluta quibusdam obcaecati illo, tenetur ut deserunt dolores inventore, fugit dolorem  sapiente ea quisquam.",
+      "Created a feature-rich admin panel for managing eCommerce operations with a responsive frontend built in React.js and ShadCN UI. Developed backend functionality using Node.js, Express, Prisma ORM, and MySQL, ensuring seamless API integrations and efficient order and inventory management. Focused on scalability and performance optimization to support smooth store operations.",
     tech: ["Javascript", "React", "Tailwind", "Firebase", "Razorpay"],
   },
   {
     imagePath: xboxAppImg,
     title: "Ecommerce Website for Gaming Consoles (X-BOX Clone)",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa velvoluptatum repellendus voluptate cumque quia. Ipsum soluta quibusdam obcaecati illo, tenetur ut deserunt dolores inventore, fugit dolorem  sapiente ea quisquam.",
+      "Built a React.js and Node.js-based Ecommerce platform for gaming consoles. Integrated secure JWT authentication and Razorpay for seamless payments. Achieved a user-centric design, efficient MongoDB database management. Demonstrates strong full-stack development skills",
     tech: [
       "Javascript",
       "React",
@@ -46,10 +46,7 @@ const FeaturedProjectsSection = () => {
         Fetured Projects
       </h2>
       {data.map((element, index) => (
-        <div
-          key={index}
-          className="md:px-4 py-6 w-100 cursor-pointer rounded-lg md:hover:bg-slate-800"
-        >
+        <div key={index} className="md:px-4 py-6 w-100 rounded-lg">
           <img
             className=" rounded-t-lg mx-auto"
             src={element.imagePath}

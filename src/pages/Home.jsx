@@ -5,6 +5,7 @@ import { FaInstagram } from "react-icons/fa";
 import AboutSection from "../components/AboutSection";
 import ExperienceSection from "../components/ExperienceSection";
 import FeaturedProjectsSection from "../components/FeaturedProjectsSection";
+import SkillsSection from "../components/SkillsSection";
 
 const Home = () => {
   return (
@@ -30,7 +31,7 @@ const Home = () => {
         </div>
         <div className="flex space-x-4 mt-4 md:mt-0 mb-8 md:mb-0">
           <a
-            href="https://github.com"
+            href="https://github.com/RohanShirsalkar"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-400"
@@ -39,7 +40,7 @@ const Home = () => {
             <FaGithub size={30} />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/rohan-shirsalkar-23878b208"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-400"
@@ -48,7 +49,7 @@ const Home = () => {
             <FaLinkedin size={30} />
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/rohan_shirsalkar/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-400"
@@ -61,6 +62,7 @@ const Home = () => {
       {/* Part B: Scrollable Right Section */}
       <div className="w-full md:w-3/5 h-full md:overflow-y-scroll scrollbar-hide py-16 px-8">
         <AboutSection />
+        <SkillsSection />
         <ExperienceSection />
         <FeaturedProjectsSection />
       </div>
